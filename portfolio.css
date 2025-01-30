@@ -71,18 +71,21 @@ body {
 }
 
 .curtain {
-  position: absolute;
+  position: fixed;
   top: -10px;
   left: 0;
   z-index: 3;
   width: 100%;
-  height: 100vh;
+  height: 1100vh;
 }
 .curtain__img {
   position: absolute;
   top: 0;
   left: -50%;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: -webkit-transform 2s linear;
   transition: -webkit-transform 2s linear;
   transition: transform 2s linear;
