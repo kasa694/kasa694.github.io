@@ -1,4 +1,5 @@
 const curtain = document.getElementsByClassName("js-curtain");
+const curtainWrapper = document.getElementById("js-curtain-wrapper");
 const item = document.getElementsByClassName("js-item");
 const line = document.getElementById("js-line");
 const back = document.getElementById("js-back");
@@ -54,6 +55,7 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         item[0].style.backgroundColor = "rgb(240, 240, 240)";
         light.setAttribute("fill", "url(#grad)");
+        curtainWrapper.style.display = "none";
     }, 3000);
 });
 

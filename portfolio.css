@@ -113,6 +113,12 @@ body {
   height: 64px;
   background-color: white;
 }
+.nav__inner:hover {
+  cursor: pointer;
+}
+.nav__inner svg {
+  pointer-events: none;
+}
 .nav__inner:first-of-type {
   background-color: rgb(160, 160, 160);
 }
